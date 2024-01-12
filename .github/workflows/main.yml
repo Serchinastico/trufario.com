@@ -10,4 +10,4 @@ jobs:
     - uses: serchinastico/github-kanban-action@v0.0.2
       with:
         project-url: https://github.com/users/Serchinastico/projects/7
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
