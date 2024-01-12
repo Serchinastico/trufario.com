@@ -5,9 +5,9 @@ jobs:
   update_kanban:
     name: Build the static Kanban page for Trufario
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: serchinastico/github-kanban-action@v0.0.2
-      with:
-        project-url: https://github.com/users/Serchinastico/projects/7
-        token: ${{ secrets.GH_TOKEN }}
+      - uses: serchinastico/github-kanban-action@bf93f74f8b81ce6afb902b9d82c55b91515312e2
+        with:
+          project-url: https://github.com/users/Serchinastico/projects/7
+          token: ${{ secrets.GH_TOKEN }}
