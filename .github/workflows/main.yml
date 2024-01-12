@@ -5,6 +5,8 @@ jobs:
   update_kanban:
     name: Build the static Kanban page for Trufario
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
