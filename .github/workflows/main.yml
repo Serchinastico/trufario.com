@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: serchinastico/github-kanban-action@bfb0030aeb0a4752816e645e067f34145402f977
+      - uses: serchinastico/github-kanban-action@main
         with:
           project-url: https://github.com/users/Serchinastico/projects/7
           token: ${{ secrets.GH_TOKEN }}
