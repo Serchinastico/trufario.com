@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  update_kanban:
+    name: Build the static Kanban page for Trufario
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: serchinastico/github-kanban-action@v0.0.2
+      with:
+        project-url: https://github.com/users/Serchinastico/projects/7
+        token: ${{ secrets.GITHUB_TOKEN }}
