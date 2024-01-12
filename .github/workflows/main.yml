@@ -1,3 +1,4 @@
+name: Update Trufario Kanban page
 on:
   workflow_dispatch:
 
