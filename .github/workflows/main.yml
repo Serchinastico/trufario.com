@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
       - uses: serchinastico/github-kanban-action@main
         with:
           project-url: https://github.com/users/Serchinastico/projects/7
           token: ${{ secrets.GH_TOKEN }}
+      - uses: stefanzweifel/git-auto-commit-action@v5
